@@ -1,0 +1,27 @@
+---
+import TeamCard from "./TeamCard.astro";
+
+interface Props {
+  heading: string;
+  members: {
+    name: string;
+    role: string;
+    bio: string;
+    photo: string;
+    linkedin?: string;
+  }[];
+}
+
+const { heading, members } = Astro.props;
+---
+
+<section class="w-full bg-cream py-12 md:py-20 lg:py-28">
+  <div class="mx-auto max-w-6xl px-6">
+    <h2 class="text-center mb-12">{heading}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      {members.map((member) => (
+        <TeamCard {...member} />
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,47 @@
+---
+interface Props {
+  heading: string;
+  emails: string[];
+  firstNameLabel: string;
+  lastNameLabel: string;
+  emailLabel: string;
+  messageLabel: string;
+  sendLabel: string;
+}
+
+const { heading, emails, firstNameLabel, lastNameLabel, emailLabel, messageLabel, sendLabel } = Astro.props;
+---
+
+<section class="w-full bg-cream" id="contact">
+  <div class="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3">
+    <div class="bg-blue text-white p-8 md:p-12 flex flex-col justify-center">
+      <h2 class="text-cream mb-6">{heading}</h2>
+      {emails.map((email) => (
+        <a href={`mailto:${email}`} class="text-cream/80 hover:text-cream text-sm mb-2 block">{email}</a>
+      ))}
+    </div>
+    <div class="md:col-span-2 p-8 md:p-12">
+      <form action="https://formspree.io/f/placeholder" method="POST" class="space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm mb-1">{firstNameLabel}</label>
+            <input type="text" name="firstName" class="w-full border border-black px-3 py-2 bg-white text-sm" />
+          </div>
+          <div>
+            <label class="block text-sm mb-1">{lastNameLabel}</label>
+            <input type="text" name="lastName" class="w-full border border-black px-3 py-2 bg-white text-sm" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm mb-1">{emailLabel}</label>
+          <input type="email" name="email" required class="w-full border border-black px-3 py-2 bg-white text-sm" />
+        </div>
+        <div>
+          <label class="block text-sm mb-1">{messageLabel}</label>
+          <textarea name="message" rows="5" class="w-full border border-black px-3 py-2 bg-white text-sm"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">{sendLabel}</button>
+      </form>
+    </div>
+  </div>
+</section>

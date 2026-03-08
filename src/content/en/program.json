@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "heading": "What We Do"
+  },
+  "mission": {
+    "text": "Our mission is to implement and scale the most cost-effective solutions against violence and crime. ACTRA is the first organization attempting to scale cognitive behavioral therapy-informed programs for at-risk populations across Latin America."
+  },
+  "photos": [
+    { "src": "/images/program1.png", "alt": "Youth playing soccer in community" },
+    { "src": "/images/program2.png", "alt": "Mentoring session with participants" },
+    { "src": "/images/program3.png", "alt": "Group activity with young people" }
+  ],
+  "stats": [
+    { "text": "Latin America has the highest homicide rate of any region, with over 140,000 homicides per year." },
+    { "text": "The region has the fastest growing prison population in the world, costing billions in public spending." },
+    { "text": "Colombia has the 4th highest homicide rate in the Americas, with 25 homicides per 100,000 people." }
+  ]
+}

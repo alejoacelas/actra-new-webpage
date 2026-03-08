@@ -1,0 +1,26 @@
+{
+  "nav": {
+    "home": "Home",
+    "program": "Our Program",
+    "support": "Support Us"
+  },
+  "langSwitch": "Español",
+  "newsletter": {
+    "heading": "Be the first to get the news!",
+    "text": "Sign up for our newsletter to follow us on our journey to develop the most cost-effective and scalable program against crime in Latin America.",
+    "placeholder": "Enter your email here *",
+    "button": "Sign Up"
+  },
+  "contact": {
+    "heading": "Get in Touch",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email *",
+    "message": "Message",
+    "send": "Send",
+    "emails": ["laura@actra.ngo", "henning@actra.ngo"]
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

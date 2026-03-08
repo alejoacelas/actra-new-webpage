@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "heading": "Qué Hacemos"
+  },
+  "mission": {
+    "text": "Nuestra misión es implementar y escalar las soluciones más costo-efectivas contra la violencia y el crimen. ACTRA es la primera organización que intenta escalar programas informados por la terapia cognitivo conductual para poblaciones en riesgo en toda América Latina."
+  },
+  "photos": [
+    { "src": "/images/program1.png", "alt": "Jóvenes jugando fútbol en comunidad" },
+    { "src": "/images/program2.png", "alt": "Sesión de mentoría con participantes" },
+    { "src": "/images/program3.png", "alt": "Actividad grupal con jóvenes" }
+  ],
+  "stats": [
+    { "text": "América Latina tiene la tasa de homicidios más alta de cualquier región, con más de 140.000 homicidios por año." },
+    { "text": "La región tiene la población carcelaria de más rápido crecimiento en el mundo, costando miles de millones en gasto público." },
+    { "text": "Colombia tiene la 4ª tasa de homicidios más alta de las Américas, con 25 homicidios por cada 100.000 personas." }
+  ]
+}

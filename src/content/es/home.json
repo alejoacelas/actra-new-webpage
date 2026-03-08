@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "heading": "Construyendo comunidades donde todos se sientan seguros",
+    "text": "Empoderamos a jóvenes en riesgo para evitar una vida de crimen a través de la Terapia Cognitivo Conductual, ayudándoles a tomar control de sus decisiones e identidades.",
+    "cta": "Únete a nosotros para crear comunidades más seguras, felices y saludables.",
+    "buttons": [
+      { "label": "Presentación Corta", "href": "https://www.canva.com/design/DAGvhPZ5gYM/0Kv5kPF8NcSEKt8zVbECAA/view" },
+      { "label": "Folleto Detallado", "href": "https://www.canva.com/design/DAGvhPWWQIA/9MB9iVd_AW8dswyrrIgDog/view" }
+    ],
+    "learnMore": "Conoce más sobre nosotros a través de:"
+  },
+  "stats": [
+    { "number": "17.090.446", "label": "PERSONAS", "description": "en Colombia son víctimas del crimen cada año" },
+    { "number": "57", "label": "ECAs", "description": "demuestran la efectividad de nuestro enfoque" },
+    { "number": "$2-5", "label": "", "description": "es nuestro costo estimado para prevenir un crimen" }
+  ],
+  "problem": {
+    "sectionTitle": "El Problema",
+    "items": [
+      { "title": "EL CRIMEN ES UNA ENDEMIA SIN TRATAR", "text": "Los homicidios son la 3ª causa global de muerte para jóvenes (15-29). En Colombia, la tasa de homicidios es más de 4 veces el promedio mundial." },
+      { "title": "EL CRIMEN ES INCREÍBLEMENTE COSTOSO", "text": "Se gastan miles de millones en policía, prisiones y seguridad. Se estima que el crimen cuesta el 3,12% del PIB de Colombia, alrededor de $500 por crimen." },
+      { "title": "EL CRIMEN ES UNA PREOCUPACIÓN PRINCIPAL", "text": "El miedo constante al crimen limita cómo las personas viven, trabajan y se mueven. El crimen es la principal preocupación por encima del desempleo en América Latina." }
+    ]
+  },
+  "solution": {
+    "sectionTitle": "La Solución",
+    "items": [
+      { "title": "EL CRIMEN ES PREVENIBLE", "text": "Los programas cognitivo conductuales existentes han logrado cambios de comportamiento duraderos, previniendo más de 300 crímenes por participante en diez años a costos de menos de $2 por crimen." },
+      { "title": "NUESTRO ENFOQUE ESTÁ BIEN EVIDENCIADO", "text": "57 ensayos controlados aleatorios (ECAs) muestran que los programas de TCC pueden tener efectos de reducción del 25-50% en los participantes." }
+    ]
+  },
+  "team": {
+    "heading": "Conoce al Equipo",
+    "members": [
+      {
+        "name": "Laura Sofia Castro",
+        "role": "Co-Directora Ejecutiva",
+        "bio": "Trotamundos colombiana con más de 4 años de experiencia en IPA, ayudando a más de una docena de organizaciones a diseñar programas basados en datos y costo-efectivos. Tiene un título en Gobierno, Economía y Ciencias del Comportamiento de Minerva University.",
+        "photo": "/images/team/laura.jpg",
+        "linkedin": "https://www.linkedin.com/in/laurasofia-castro/"
+      },
+      {
+        "name": "Henning Peters",
+        "role": "Co-Director Ejecutivo",
+        "bio": "Emprendedor social en serie que ayudó a cerrar una planta de carbón, creó una eco-aldea y múltiples campamentos climáticos desde cero y asesoró a más de 50 grupos de base. Psicólogo con M.Sc. y nivel B2 en español.",
+        "photo": "/images/team/henning.jpg",
+        "linkedin": "https://www.linkedin.com/in/henning-peters/"
+      }
+    ]
+  },
+  "endorsements": {
+    "heading": "Una intervención respaldada por instituciones líderes:",
+    "quotes": [
+      "\"Recomendada como una de nuestras 'Mejores Apuestas' en oportunidades emergentes para impacto a escala.\"",
+      "\"Entusiasmados por las sustanciales externalidades positivas de la reducción del crimen que no modelamos.\"",
+      "\"Una de las intervenciones más costo-efectivas en términos de seguridad.\"",
+      "\"Focalizada, de corto plazo, y frecuentemente puede ser implementada por facilitadores no expertos.\""
+    ]
+  }
+}

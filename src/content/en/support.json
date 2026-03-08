@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "heading": "Support Us"
+  },
+  "section": {
+    "heading": "You can join us in this mission",
+    "features": [
+      { "icon": "expert", "title": "Expert", "text": "If you are an expert in CBT, criminal rehabilitation, or at-risk contexts in Colombia, help us inform the development of our program" },
+      { "icon": "organization", "title": "Organization", "text": "If you are an organization or government agency in contact with populations at risk, support us in reaching our target participants" },
+      { "icon": "academia", "title": "Academia", "text": "If you are in academia, partner with us in the use and generation of research through our program" },
+      { "icon": "funder", "title": "Funder", "text": "If you are a funder, help us finance the development and scaling of our program, one of the most cost-effective interventions to prevent crime" }
+    ]
+  }
+}

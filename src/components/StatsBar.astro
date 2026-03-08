@@ -1,0 +1,21 @@
+---
+interface Props {
+  stats: { number: string; label: string; description: string }[];
+}
+
+const { stats } = Astro.props;
+---
+
+<section class="w-full bg-cream-soft py-12 md:py-16">
+  <div class="mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+    {stats.map((stat, i) => (
+      <div>
+        <p class="font-heading text-4xl md:text-5xl lg:text-6xl tracking-tight" style={`color: ${i === 0 ? "var(--color-orange)" : i === 1 ? "var(--color-blue)" : "var(--color-orange)"}`}>
+          {stat.number}
+        </p>
+        {stat.label && <p class="text-sm font-bold uppercase tracking-wider mt-1">{stat.label}</p>}
+        <p class="text-sm text-gray-dark mt-2">{stat.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import StatsBar from "../components/StatsBar.astro";
+import TwoColumnSection from "../components/TwoColumnSection.astro";
+import TeamSection from "../components/TeamSection.astro";
+import EndorsementBanner from "../components/EndorsementBanner.astro";
+import ContactForm from "../components/ContactForm.astro";
+import NewsletterBar from "../components/NewsletterBar.astro";
+import type { Lang } from "../i18n/translations";
+import { getContent } from "../i18n/content";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const home = getContent("home", lang);
+const common = getContent("common", lang);
+---
+
+<Layout title={lang === "en" ? "Home" : "Inicio"}>
+  <Hero
+    heading={home.hero.heading}
+    text={home.hero.text}
+    cta={home.hero.cta}
+    learnMore={home.hero.learnMore}
+    buttons={home.hero.buttons}
+  />
+
+  <StatsBar stats={home.stats} />
+
+  <TwoColumnSection
+    sectionTitle={home.problem.sectionTitle}
+    items={home.problem.items}
+    image="/images/problem.jpg"
+    imageAlt="Youth affected by crime in Colombia"
+    imagePosition="right"
+    bg="cream"
+  />
+
+  <TwoColumnSection
+    sectionTitle={home.solution.sectionTitle}
+    items={home.solution.items}
+    image="/images/solution.png"
+    imageAlt="Community support through CBT programs"
+    imagePosition="left"
+    bg="cream-soft"
+  />
+
+  <TeamSection heading={home.team.heading} members={home.team.members} />
+
+  <EndorsementBanner heading={home.endorsements.heading} quotes={home.endorsements.quotes} />
+
+  <ContactForm
+    heading={common.contact.heading}
+    emails={common.contact.emails}
+    firstNameLabel={common.contact.firstName}
+    lastNameLabel={common.contact.lastName}
+    emailLabel={common.contact.email}
+    messageLabel={common.contact.message}
+    sendLabel={common.contact.send}
+  />
+
+  <NewsletterBar
+    heading={common.newsletter.heading}
+    text={common.newsletter.text}
+    placeholder={common.newsletter.placeholder}
+    button={common.newsletter.button}
+  />
+</Layout>

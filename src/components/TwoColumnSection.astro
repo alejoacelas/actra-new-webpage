@@ -1,0 +1,40 @@
+---
+interface Props {
+  sectionTitle: string;
+  items: { title: string; text: string }[];
+  image: string;
+  imageAlt?: string;
+  imagePosition?: "left" | "right";
+  bg?: "cream" | "cream-soft" | "cream-warm" | "orange" | "blue" | "white";
+}
+
+const { sectionTitle, items, image, imageAlt = "", imagePosition = "right", bg = "cream" } = Astro.props;
+
+const bgMap: Record<string, string> = {
+  cream: "bg-cream",
+  "cream-soft": "bg-cream-soft",
+  "cream-warm": "bg-cream-warm",
+  orange: "bg-orange text-white",
+  blue: "bg-blue text-white",
+  white: "bg-white",
+};
+---
+
+<section class:list={[bgMap[bg], "w-full py-12 md:py-20 lg:py-28"]}>
+  <div class:list={[
+    "mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center",
+  ]}>
+    <div class:list={[imagePosition === "left" ? "md:order-2" : ""]}>
+      <h2 class="mb-8">{sectionTitle}</h2>
+      {items.map((item) => (
+        <div class="mb-6">
+          <p class="text-xs uppercase tracking-widest font-bold mb-2">{item.title}</p>
+          <p class="text-base leading-relaxed">{item.text}</p>
+        </div>
+      ))}
+    </div>
+    <div class:list={[imagePosition === "left" ? "md:order-1" : ""]}>
+      <img src={image} alt={imageAlt} class="rounded-lg w-full object-cover" loading="lazy" />
+    </div>
+  </div>
+</section>

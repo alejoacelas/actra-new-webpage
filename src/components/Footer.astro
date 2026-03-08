@@ -1,0 +1,24 @@
+---
+import { getLangFromUrl } from "../i18n/translations";
+import { getContent } from "../i18n/content";
+
+const lang = getLangFromUrl(Astro.url);
+const common = getContent("common", lang);
+const year = new Date().getFullYear();
+---
+
+<footer class="w-full bg-cream border-t border-gray-light py-8">
+  <div class="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+    <a href={`/${lang}`} class="flex items-center gap-2">
+      <img src="/images/logo.png" alt="ACTRA logo" class="h-8" />
+    </a>
+    <div class="text-center md:text-right text-sm text-gray-mid">
+      <p class="mb-1">
+        {common.contact.emails.map((email: string, i: number) => (
+          <>{i > 0 && " | "}<a href={`mailto:${email}`} class="hover:text-black">{email}</a></>
+        ))}
+      </p>
+      <p>&copy; {year} ACTRA. {common.footer.rights}</p>
+    </div>
+  </div>
+</footer>

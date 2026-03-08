@@ -1,0 +1,37 @@
+---
+import { getLangFromUrl, routes, getOtherLangUrl } from "../i18n/translations";
+import { getContent } from "../i18n/content";
+
+const lang = getLangFromUrl(Astro.url);
+const common = getContent("common", lang);
+const otherLang = lang === "en" ? "es" : "en";
+const otherLangUrl = getOtherLangUrl(Astro.url.pathname, lang);
+const r = routes[lang];
+
+const navItems = [
+  { label: common.nav.home, href: r.home },
+  { label: common.nav.program, href: r.program },
+  { label: common.nav.support, href: r.support },
+];
+
+const currentPath = Astro.url.pathname.replace(/\/$/, "");
+---
+
+<header class="w-full bg-cream py-4">
+  <div class="mx-auto max-w-6xl px-6 flex items-center justify-between">
+    <a href={r.home} class="flex items-center gap-2">
+      <img src="/images/logo.png" alt="ACTRA logo" class="h-10" />
+    </a>
+    <nav class="flex items-center gap-2">
+      {navItems.map(({ label, href }) => (
+        <a
+          href={href}
+          class:list={["btn btn-nav rounded-full", { active: currentPath === href }]}
+        >
+          {label}
+        </a>
+      ))}
+      <a href={otherLangUrl} class="btn btn-nav rounded-full ml-2">{common.langSwitch}</a>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,15 @@
+---
+interface Props {
+  heading: string;
+  bg?: "orange" | "blue";
+}
+
+const { heading, bg = "orange" } = Astro.props;
+const bgClass = bg === "blue" ? "bg-blue" : "bg-orange";
+---
+
+<section class:list={[bgClass, "w-full py-12 md:py-20"]}>
+  <div class="mx-auto max-w-6xl px-6 text-center">
+    <h1 class="text-white">{heading}</h1>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+---
+interface Props {
+  heading: string;
+  text: string;
+  placeholder: string;
+  button: string;
+}
+
+const { heading, text, placeholder, button } = Astro.props;
+---
+
+<section class="w-full bg-orange py-12 md:py-16">
+  <div class="mx-auto max-w-3xl px-6 text-center">
+    <h3 class="text-white mb-4">{heading}</h3>
+    <p class="text-white/90 text-sm mb-6">{text}</p>
+    <form action="https://formspree.io/f/placeholder" method="POST" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder={placeholder}
+        class="flex-1 px-4 py-3 text-sm bg-white text-black border-0"
+      />
+      <button type="submit" class="btn btn-primary whitespace-nowrap">{button}</button>
+    </form>
+  </div>
+</section>

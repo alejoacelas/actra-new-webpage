@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHero from "../components/PageHero.astro";
+import SupportSection from "../components/SupportSection.astro";
+import ContactForm from "../components/ContactForm.astro";
+import NewsletterBar from "../components/NewsletterBar.astro";
+import type { Lang } from "../i18n/translations";
+import { getContent } from "../i18n/content";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const support = getContent("support", lang);
+const common = getContent("common", lang);
+---
+
+<Layout title={support.hero.heading}>
+  <PageHero heading={support.hero.heading} bg="orange" />
+
+  <SupportSection heading={support.section.heading} features={support.section.features} />
+
+  <ContactForm
+    heading={common.contact.heading}
+    emails={common.contact.emails}
+    firstNameLabel={common.contact.firstName}
+    lastNameLabel={common.contact.lastName}
+    emailLabel={common.contact.email}
+    messageLabel={common.contact.message}
+    sendLabel={common.contact.send}
+  />
+
+  <NewsletterBar
+    heading={common.newsletter.heading}
+    text={common.newsletter.text}
+    placeholder={common.newsletter.placeholder}
+    button={common.newsletter.button}
+  />
+</Layout>

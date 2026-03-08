@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "heading": "Building communities where everyone feels safe",
+    "text": "We empower at-risk youth to avoid a life of crime through Cognitive Behavioral Therapy, helping them gain control over their choices and identities.",
+    "cta": "Join us in creating safer, happier, and healthier communities.",
+    "buttons": [
+      { "label": "Short Pitch Deck", "href": "https://www.canva.com/design/DAGvhPZ5gYM/0Kv5kPF8NcSEKt8zVbECAA/view" },
+      { "label": "Detailed Brochure", "href": "https://www.canva.com/design/DAGvhPWWQIA/9MB9iVd_AW8dswyrrIgDog/view" }
+    ],
+    "learnMore": "Learn more about us through:"
+  },
+  "stats": [
+    { "number": "17,090,446", "label": "PEOPLE", "description": "in Colombia fall victim to crime every year" },
+    { "number": "57", "label": "RCTs", "description": "show the effectiveness of our approach" },
+    { "number": "$2-5", "label": "", "description": "is our estimated cost to prevent one crime" }
+  ],
+  "problem": {
+    "sectionTitle": "The Problem",
+    "items": [
+      { "title": "CRIME IS AN UNTREATED ENDEMIC", "text": "Homicides are the 3rd global cause of death for youth (15-29). In Colombia, the homicide rate is over 4× the global average." },
+      { "title": "CRIME IS INCREDIBLY COSTLY", "text": "Billions are spent on policing, prisons, and security. Crime is estimated to cost 3.12% of Colombia's GDP, around $500 per crime." },
+      { "title": "CRIME IS A TOP CONCERN", "text": "Constant fear of crime limits how people live, work and move around. Crime is the leading worry ahead of unemployment in Latin America." }
+    ]
+  },
+  "solution": {
+    "sectionTitle": "The Solution",
+    "items": [
+      { "title": "CRIME IS PREVENTABLE", "text": "Existing cognitive behavioral programs have achieved long-lasting behavior changes, preventing over 300 crimes per participant over ten years at costs of less than $2 per crime." },
+      { "title": "OUR APPROACH IS WELL-EVIDENCED", "text": "57 random controlled trials (RCTs) show CBT programs can have reduction effects of 25-50% in participants." }
+    ]
+  },
+  "team": {
+    "heading": "Meet the Team",
+    "members": [
+      {
+        "name": "Laura Sofia Castro",
+        "role": "Co-Executive Director",
+        "bio": "Colombian globetrotter with 4+ years of experience at IPA, helping over a dozen organizations design data-driven, cost-effective programs. Holds a degree in Government, Economics, and Behavioral Science from Minerva University.",
+        "photo": "/images/team/laura.jpg",
+        "linkedin": "https://www.linkedin.com/in/laurasofia-castro/"
+      },
+      {
+        "name": "Henning Peters",
+        "role": "Co-Executive Director",
+        "bio": "Serial non-profit entrepreneur who helped shut down a coal power plant, created an eco-village and multiple climate camps from scratch and advised over 50 grassroots groups. Psychologist with an M.Sc. and B2 level in Spanish.",
+        "photo": "/images/team/henning.jpg",
+        "linkedin": "https://www.linkedin.com/in/henning-peters/"
+      }
+    ]
+  },
+  "endorsements": {
+    "heading": "An intervention endorsed by leading institutions:",
+    "quotes": [
+      "\"Recommended as one of our 'Best Bets' in emerging opportunities for impact at scale.\"",
+      "\"Excited by the substantial positive externalities of crime reduction that we did not model.\"",
+      "\"One of the most cost-effective interventions in terms of security.\"",
+      "\"Targeted, short-term, and can often be delivered by non-expert facilitators.\""
+    ]
+  }
+}

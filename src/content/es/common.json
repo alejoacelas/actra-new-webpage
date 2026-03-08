@@ -1,0 +1,26 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "program": "Qué Hacemos",
+    "support": "Apóyanos"
+  },
+  "langSwitch": "English",
+  "newsletter": {
+    "heading": "¡Sé el primero en enterarte!",
+    "text": "Suscríbete a nuestro boletín para seguirnos en nuestro camino para desarrollar el programa más rentable y escalable contra el crimen en América Latina.",
+    "placeholder": "Ingresa tu email aquí *",
+    "button": "Suscríbete"
+  },
+  "contact": {
+    "heading": "Contáctanos",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Correo electrónico *",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "emails": ["laura@actra.ngo", "henning@actra.ngo"]
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

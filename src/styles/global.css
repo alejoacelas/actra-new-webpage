@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap") layer(base);
+@import "tailwindcss";
+
+/*
+ * ACTRA design tokens — extracted from the current Wix site.
+ * See /reference/extraction/output/aesthetic-guide.md for full documentation.
+ */
+
+@theme {
+  /* Colors */
+  --color-cream: #FFFCF3;
+  --color-cream-soft: #FBF6EE;
+  --color-cream-warm: #FFE7BC;
+  --color-orange: #FF6900;
+  --color-orange-dark: #DB6E00;
+  --color-blue: #000E99;
+  --color-blue-dark: #071299;
+  --color-brown: #966B54;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-gray-light: #BFBDB6;
+  --color-gray-mid: #807E7A;
+  --color-gray-dark: #403F3D;
+
+  /* Font families */
+  --font-heading: "Questrial", sans-serif;
+  --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-small: "DIN Next W01 Light", sans-serif;
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.875rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.044em;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.75rem);
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+h6 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+/* Button utilities */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--color-brown);
+  color: var(--color-cream-soft);
+  border-color: var(--color-brown);
+}
+.btn-primary:hover {
+  background-color: var(--color-black);
+  border-color: var(--color-black);
+  color: var(--color-cream);
+}
+
+.btn-secondary {
+  background-color: var(--color-cream);
+  color: var(--color-blue);
+  border-color: var(--color-cream);
+}
+.btn-secondary:hover {
+  background-color: var(--color-brown);
+  border-color: var(--color-cream-soft);
+  color: var(--color-cream-soft);
+}
+
+.btn-nav {
+  background-color: transparent;
+  color: var(--color-black);
+  border: 1.5px solid var(--color-black);
+  padding: 0.4rem 1.2rem;
+  font-size: 0.8rem;
+}
+.btn-nav:hover, .btn-nav.active {
+  background-color: var(--color-black);
+  color: var(--color-cream);
+}

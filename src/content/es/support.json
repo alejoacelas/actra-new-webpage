@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "heading": "Apóyanos"
+  },
+  "section": {
+    "heading": "Puedes unirte a nosotros en esta misión",
+    "features": [
+      { "icon": "expert", "title": "Experto", "text": "Si eres un experto en TCC, rehabilitación criminal o contextos de riesgo en Colombia, ayúdanos a informar el desarrollo de nuestro programa" },
+      { "icon": "organization", "title": "Organización", "text": "Si eres una organización o agencia gubernamental en contacto con poblaciones en riesgo, apóyanos para llegar a nuestros participantes objetivo" },
+      { "icon": "academia", "title": "Academia", "text": "Si estás en la academia, asóciate con nosotros en el uso y generación de investigación a través de nuestro programa" },
+      { "icon": "funder", "title": "Financiador", "text": "Si eres un financiador, ayúdanos a financiar el desarrollo y la escalabilidad de nuestro programa, una de las intervenciones más costo-efectivas para prevenir el crimen" }
+    ]
+  }
+}

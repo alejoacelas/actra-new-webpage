@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHero from "../components/PageHero.astro";
+import Section from "../components/Section.astro";
+import NewsletterBar from "../components/NewsletterBar.astro";
+import type { Lang } from "../i18n/translations";
+import { getContent } from "../i18n/content";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const program = getContent("program", lang);
+const common = getContent("common", lang);
+---
+
+<Layout title={program.hero.heading}>
+  <PageHero heading={program.hero.heading} bg="orange" />
+
+  <Section bg="cream-soft">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-lg leading-relaxed">{program.mission.text}</p>
+    </div>
+  </Section>
+
+  <section class="w-full">
+    <div class="grid grid-cols-1 md:grid-cols-3">
+      {program.photos.map((photo: { src: string; alt: string }) => (
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src={photo.src} alt={photo.alt} class="w-full h-full object-cover" loading="lazy" />
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <Section bg="cream-soft">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {program.stats.map((stat: { text: string }) => (
+        <div class="bg-cream-warm/50 rounded-lg p-6 text-center">
+          <p class="text-sm leading-relaxed">{stat.text}</p>
+        </div>
+      ))}
+    </div>
+  </Section>
+
+  <NewsletterBar
+    heading={common.newsletter.heading}
+    text={common.newsletter.text}
+    placeholder={common.newsletter.placeholder}
+    button={common.newsletter.button}
+  />
+</Layout>
