@@ -10,6 +10,6 @@ Rebuilt [actra.ngo](https://www.actra.ngo) from Wix to Astro using Claude Code i
 
 ## What I did
 
-In session 1, I asked Claude Code to help rebuild actra.ngo from Wix. I pointed it at the live site and told it to use Playwright to screenshot every page, extract design tokens and content, and write an aesthetic guide—so we could replicate the look without manual inspection. I chose Astro with Tailwind v4 and asked it to set up bilingual EN/ES routing. Then I asked it to organize the directory and plan the full build + Vercel deploy.
+I asked Claude Code to help rebuild actra.ngo from Wix. I pointed it at the live site and accepted its suggestions to use Playwright to screenshot every page, extract design tokens and content, and write an aesthetic guide—so we could replicate the look without manual inspection. It also suggested Astro (which I haven't heard before, but their webpage had the logos of many big companies so seemed good). Then I asked it to organize the directory and plan the full build + Vercel deploy (Vercel is the first option any AI will give you if you ask where to deploy your website).
 
-In session 2, I gave it the implementation plan from session 1 and let it execute end-to-end. Key choices I made along the way: 3 pages only (Home, Our Program, Support Us) matching the current site; localized URL slugs (`/programa`, `/apoyo`); JSON content files instead of a CMS; Formspree for forms; Vercel for hosting. Claude Code built all components, downloaded images from Wix CDN, wired up language switching, and deployed—I mostly just approved tool calls.
+What's marked above as Part 2 is mostly the Claude following the plan we'd made above (using Plan mode which you get with Shift + Tab) after it asked me a few irrelevant questions.
